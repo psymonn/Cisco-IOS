@@ -1,0 +1,98 @@
+Pluralsight course: Ethernet Operation and Switch Configuration (use tft ftp to upload flash file to upgarde the switch)
+
+Switch>en
+Switch#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#hostname switch1
+switch1(config)#ip domain-name redink.com
+switch1(config)#username admin
+Please set a password for username
+switch1(config)#username admin secret cisco
+switch1(config)#crypto key generate rsa
+The name for the keys will be: switch1.redink.com
+Choose the size of the key modulus in the range of 360 to 4096 for your
+  General Purpose Keys. Choosing a key modulus greater than 512 may take
+  a few minutes.
+
+How many bits in the modulus [512]: 1024
+% Generating 1024 bit RSA keys, keys will be non-exportable...
+[OK] (elapsed time was 0 seconds)
+
+switch1(config)#
+*Apr 12 05:49:03.841: %SSH-5-ENABLED: SSH 1.99 has been enabled
+switch1(config)#ip ssh ver 2
+switch1(config)#service password-en
+switch1(config)#service password-encryption
+switch1(config)#line con 0
+switch1(config-line)#password cisco
+switch1(config-line)#login
+switch1(config-line)#line vty 0 4
+switch1(config-line)#login local
+switch1(config-line)#transport input ssh
+switch1(config-line)#exit
+switch1(config)#interface vlan 1
+switch1(config-if)#ip address 10.0.0.5 255.255.255.0
+switch1(config-if)#no shutdown
+Switch(config-if)#do show arp
+Protocol  Address          Age (min)  Hardware Addr   Type   Interface
+Internet  10.0.0.5                -   0cc1.bdb9.8001  ARPA   Vlan1
+switch1(config-if)#exit
+switch1#show running-config
+switch1#  copy running-config startup-config
+switch1#show history all
+switch1#show history
+show terminal
+You can now ssh to the switch1 -> ssh admin@10.0.0.2
+
+switch1#dir flash:
+Directory of flash0:/
+
+    1  drw-           0  Jan 30 2013 00:00:00 +00:00  boot
+  264  drw-           0  Oct 14 2013 00:00:00 +00:00  config
+  267  -rw-   107412732  Jul 28 2015 00:00:00 +00:00  vios_l2-adventerprisek9-m
+  268  -rw-      524288  Apr 12 2020 02:18:58 +00:00  nvram
+  269  -rw-         325  Apr 12 2020 05:54:38 +00:00  e1000_bia.txt
+
+Directory of flash0:/vios_l2-adventerprisek9-m
+
+  267  -rw-   107412732  Jul 28 2015 00:00:00 +00:00  vios_l2-adventerprisek9-m
+
+2142715904 bytes total (2030170112 bytes free)
+
+show flash:
+2030170112 bytes available (112545792 bytes used)
+
+root@gns3-ipterm-1:~# ifconfig
+eth0      Link encap:Ethernet  HWaddr a6:f2:eb:a6:f8:67
+          inet addr:10.0.0.6  Bcast:0.0.0.0  Mask:255.255.255.0
+root@gns3-ipterm-1:~# ping 10.0.0.5
+PING 10.0.0.5 (10.0.0.5) 56(84) bytes of data.
+64 bytes from 10.0.0.5: icmp_seq=1 ttl=255 time=27.3 ms
+64 bytes from 10.0.0.5: icmp_seq=2 ttl=255 time=8.52 ms
+
+
+###########################################################
+#add next hop on my pc to 10.0.0.5 and keep it persitence:
+route add 172.17.5.0 mask 255.255.0.0 10.0.0.5 -p
+ 
+ 
+Switch#show mac address-table dynamic
+          Mac Address Table
+-------------------------------------------
+
+Vlan    Mac Address       Type        Ports
+----    -----------       --------    -----
+   1    a6f2.eba6.f867    DYNAMIC     Gi0/0
+Total Mac Addresses for this criterion: 1
+
+
+Switch#clear mac address-table dynamic
+Switch#show mac address-table dynamic
+          Mac Address Table
+-------------------------------------------
+
+Vlan    Mac Address       Type        Ports
+----    -----------       --------    -----
+
+
+
