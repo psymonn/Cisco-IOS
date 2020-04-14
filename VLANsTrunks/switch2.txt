@@ -1,0 +1,597 @@
+                           GNU GRUB  version 2.00
+
+ +--------------------------------------------------------------------------+
+ |IOSv                                                                      |
+ |                                                                          |
+ |                                                                          |
+ |                                                                          |
+ |                                                                          |
+ |                                                                          |
+ |                                                                          |
+ |                                                                          |
+ |                                                                          |
+ |                                                                          |
+ |                                                                          |
+ +--------------------------------------------------------------------------+
+
+      Use the ^ and v keys to select which entry is highlighted.
+      Press enter to boot the selected OS, `e' to edit the commands
+      before booting or `c' for a command-line. ESC to return
+      previous menu.
+   The highlighted entry will be executed automatically in 0s.
+  Booting `IOSv'
+
+Booted IOSv. Boot args: [/vios_l2-adventerprisek9-m]
+
+Smart Init is enabled
+
+              Restricted Rights Legend
+
+Use, duplication, or disclosure by the Government is
+subject to restrictions as set forth in subparagraph
+(c) of the Commercial Computer Software - Restricted
+Rights clause at FAR sec. 52.227-19 and subparagraph
+(c) (1) (ii) of the Rights in Technical Data and Computer
+Software clause at DFARS sec. 252.227-7013.
+
+           cisco Systems, Inc.
+           170 West Tasman Drive
+           San Jose, California 95134-1706
+
+
+
+Cisco IOS Software, vios_l2 Software (vios_l2-ADVENTERPRISEK9-M), Version 15.2(4                                                                                                                                                                                                                                                                                           .0.55)E, TEST ENGINEERING ESTG_WEEKLY BUILD, synced to  END_OF_FLO_ISP
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2015 by Cisco Systems, Inc.
+Compiled Tue 28-Jul-15 18:52 by sasyamal
+
+
+This product contains cryptographic features and is subject to United
+States and local country laws governing import, export, transfer and
+use. Delivery of Cisco cryptographic products does not imply
+third-party authority to import, export, distribute or use encryption.
+Importers, exporters, distributors and users are responsible for
+compliance with U.S. and local country laws. By using this product you
+agree to comply with applicable laws and regulations. If you are unable
+to comply with U.S. and local laws, return this product immediately.
+
+A summary of U.S. laws governing Cisco cryptographic products may be found at:
+http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+
+If you require further assistance please contact us by sending email to
+export@cisco.com.
+
+Cisco IOSv () processor (revision 1.0) with 574713K/209920K bytes of memory.
+Processor board ID 9MJLIJJ31OA
+16 Gigabit Ethernet interfaces
+DRAM configuration is 72 bits wide with parity disabled.
+256K bytes of non-volatile configuration memory.
+2097152K bytes of ATA System CompactFlash 0 (Read/Write)
+0K bytes of ATA CompactFlash 1 (Read/Write)
+0K bytes of ATA CompactFlash 2 (Read/Write)
+0K bytes of ATA CompactFlash 3 (Read/Write)
+
+
+
+Press RETURN to get started!
+
+
+*Mar  1 00:00:03.197: %ATA-6-DEV_FOUND: device 0x1F0
+*Mar  1 00:00:03.390: %NVRAM-5-CONFIG_NVRAM_NOT_FOUND: NVRAM configuration 'flas                                                                                                                                                                                                                                                                                           h:/nvram' could not be found on disk.
+*Apr 14 10:54:52.486: %SPANTREE-5-EXTENDED_SYSID: Extended SysId enabled for typ                                                                                                                                                                                                                                                                                           e vlan
+*Apr 14 10:55:00.895: %LINK-5-CHANGED: Interface GigabitEthernet0/0, changed sta                                                                                                                                                                                                                                                                                           te to reset
+*Apr 14 10:55:00.897: %LINK-5-CHANGED: Interface GigabitEthernet0/1, changed sta                                                                                                                                                                                                                                                                                           te to reset
+*Apr 14 10:55:00.898: %LINK-5-CHANGED: Interface GigabitEthernet0/2, changed sta                                                                                                                                                                                                                                                                                           te to reset
+*Apr 14 10:55:00.900: %LINK-5-CHANGED: Interface GigabitEthernet0/3, changed sta                                                                                                                                                                                                                                                                                           te to reset
+*Apr 14 10:55:00.901: %LINK-5-CHANGED: Interface GigabitEthernet1/0, changed sta                                                                                                                                                                                                                                                                                           te to reset
+*Apr 14 10:55:00.902: %LINK-5-CHANGED: Interface GigabitEthernet1/1, changed sta                                                                                                                                                                                                                                                                                           te to reset
+*Apr 14 10:55:00.904: %LINK-5-CHANGED: Interface GigabitEthernet1/2, changed sta                                                                                                                                                                                                                                                                                           te to reset
+*Apr 14 10:55:02.074: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEth                                                                                                                                                                                                                                                                                           ernet0/0, changed state to down
+*Apr 14 10:55:02.075: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEth                                                                                                                                                                                                                                                                                           ernet0/1, changed state to down
+*Apr 14 10:55:02.077: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEth                                                                                                                                                                                                                                                                                           ernet0/2, changed state to down
+*Apr 14 10:55:02.078: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEth                                                                                                                                                                                                                                                                                           ernet0/3, changed state to down
+*Apr 14 10:55:02.079: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEth                                                                                                                                                                                                                                                                                           ernet1/0, changed state to up
+*Apr 14 10:55:02.080: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEth                                                                                                                                                                                                                                                                                           ernet1/1, changed state to up
+*Apr 14 10:55:02.081: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEth                                                                                                                                                                                                                                                                                           ernet1/2, changed state to up
+*Apr 14 10:55:02.082: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEth                                                                                                                                                                                                                                                                                           ernet1/3, changed state to up
+*Apr 14 10:55:02.083: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEth                                                                                                                                                                                                                                                                                           ernet2/0, changed state to up
+*Apr 14 10:55:02.084: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEth                                                                                                                                                                                                                                                                                           ernet2/1, changed state to up
+*Apr 14 10:55:03.598: %LINK-3-UPDOWN: Interface GigabitEthernet3/3, changed stat                                                                                                                                                                                                                                                                                           e to down
+*Apr 14 10:55:03.600: %LINK-3-UPDOWN: Interface GigabitEthernet3/2, changed stat                                                                                                                                                                                                                                                                                           e to down
+*Apr 14 10:55:03.601: %LINK-3-UPDOWN: Interface GigabitEthernet3/1, changed stat                                                                                                                                                                                                                                                                                           e to down
+*Apr 14 10:55:03.603: %LINK-3-UPDOWN: Interface GigabitEthernet3/0, changed stat                                                                                                                                                                                                                                                                                           e to down
+*Apr 14 10:55:03.604: %LINK-3-UPDOWN: Interface GigabitEthernet2/3, changed stat                                                                                                                                                                                                                                                                                           e to down
+*Apr 14 10:55:03.606: %LINK-3-UPDOWN: Interface GigabitEthernet2/2, changed stat                                                                                                                                                                                                                                                                                           e to down
+*Apr 14 10:55:03.607: %LINK-3-UPDOWN: Interface GigabitEthernet2/1, changed stat                                                                                                                                                                                                                                                                                           e to up
+*Apr 14 10:55:03.612: %LINK-3-UPDOWN: Interface GigabitEthernet2/0, changed stat                                                                                                                                                                                                                                                                                           e to up
+*Apr 14 10:55:03.615: %LINK-3-UPDOWN: Interface GigabitEthernet1/3, changed stat                                                                                                                                                                                                                                                                                           e to down
+*Apr 14 10:55:03.616: %LINK-3-UPDOWN: Interface GigabitEthernet1/2, changed stat                                                                                                                                                                                                                                                                                           e to down
+*Apr 14 10:55:03.618: %LINK-3-UPDOWN: Interface GigabitEthernet1/1, changed stat                                                                                                                                                                                                                                                                                           e to up
+*Apr 14 10:55:03.621: %LINK-3-UPDOWN: Interface GigabitEthernet1/0, changed stat                                                                                                                                                                                                                                                                                           e to up
+*Apr 14 10:55:03.624: %LINK-3-UPDOWN: Interface GigabitEthernet0/3, changed stat                                                                                                                                                                                                                                                                                           e to down
+*Apr 14 10:55:03.625: %LINK-3-UPDOWN: Interface GigabitEthernet0/2, changed stat                                                                                                                                                                                                                                                                                           e to down
+*Apr 14 10:55:03.626: %LINK-3-UPDOWN: Interface GigabitEthernet0/1, changed stat                                                                                                                                                                                                                                                                                           e to down
+*Apr 14 10:55:03.628: %LINK-3-UPDOWN: Interface GigabitEthernet0/0, changed stat                                                                                                                                                                                                                                                                                           e to down
+*Apr 14 10:55:04.898: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEth                                                                                                                                                                                                                                                                                           ernet3/3, changed state to down
+*Apr 14 10:55:04.899: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEth                                                                                                                                                                                                                                                                                           ernet3/2, changed state to down
+*Apr 14 10:55:04.900: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEth                                                                                                                                                                                                                                                                                           ernet3/1, changed state to down
+*Apr 14 10:55:04.902: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEth                                                                                                                                                                                                                                                                                           ernet3/0, changed state to down
+*Apr 14 10:55:04.903: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEth                                                                                                                                                                                                                                                                                           ernet2/3, changed state to down
+*Apr 14 10:55:04.905: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEth                                                                                                                                                                                                                                                                                           ernet2/2, changed state to down
+*Apr 14 10:55:04.906: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEth                                                                                                                                                                                                                                                                                           ernet1/3, changed state to down
+*Apr 14 10:55:04.908: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEth                                                                                                                                                                                                                                                                                           ernet1/2, changed state to down
+*Apr 14 10:55:35.256: %SYS-5-RESTART: System restarted --
+Cisco IOS Software, vios_l2 Software (vios_l2-ADVENTERPRISEK9-M), Version 15.2(4                                                                                                                                                                                                                                                                                           .0.55)E, TEST ENGINEERING ESTG_WEEKLY BUILD, synced to  END_OF_FLO_ISP
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2015 by Cisco Systems, Inc.
+Compiled Tue 28-Jul-15 18:52 by sasyamal
+*Apr 14 10:56:03.530: %PLATFORM-5-SIGNATURE_VERIFIED: Image 'flash0:/vios_l2-adventerprisek9-m' passed code signing verification
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+Switch>en
+Switch#cont f
+          ^
+% Invalid input detected at '^' marker.
+
+Switch#cont t
+          ^
+% Invalid input detected at '^' marker.
+
+Switch#hostname SW2
+        ^
+% Invalid input detected at '^' marker.
+
+Switch#cont t
+          ^
+% Invalid input detected at '^' marker.
+
+Switch#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#hostname SW2
+SW2(config)#
+SW2#copy running-config startup-config
+*Apr 14 10:58:14.196: %SYS-5-CONFIG_I: Configured from console by console
+Destination filename [startup-config]?
+Building configuration...
+Compressed configuration from 3505 bytes to 1554 bytes[OK]
+SW2#
+*Apr 14 10:58:21.745: %GRUB-5-CONFIG_WRITING: GRUB configuration is being updated on disk. Please wait...
+*Apr 14 10:58:22.570: %GRUB-5-CONFIG_WRITTEN: GRUB configuration was written to disk successfully.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SW2 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+SW2>conf t
+       ^
+% Invalid input detected at '^' marker.
+
+SW2>conf t
+       ^
+% Invalid input detected at '^' marker.
+
+SW2>en
+SW2#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+SW2(config)#VLAN 10
+SW2(config-vlan)#name Engineering
+SW2(config-vlan)#VLAN 20
+SW2(config-vlan)#name Marketing
+SW2(config-vlan)#VLAN 30
+SW2(config-vlan)#name Research
+SW2(config-vlan)#VLAN 40
+SW2(config-vlan)#name Sales
+SW2(config-vlan)#VLAN 50
+SW2(config-vlan)#name Management
+SW2(config-vlan)#
+*Apr 14 11:15:11.795: %CDP-4-NATIVE_VLAN_MISMATCH: Native VLAN mismatch discovered on GigabitEthernet1/0 (1), with SW1 GigabitEthernet1/0 (10).
+*Apr 14 11:16:03.261: %CDP-4-NATIVE_VLAN_MISMATCH: Native VLAN mismatch discovered on GigabitEthernet1/0 (1), with SW1 GigabitEthernet1/0 (10).
+*Apr 14 11:17:00.419: %CDP-4-NATIVE_VLAN_MISMATCH: Native VLAN mismatch discovered on GigabitEthernet1/0 (1), with SW1 GigabitEthernet1/0 (10).
+*Apr 14 11:17:50.454: %CDP-4-NATIVE_VLAN_MISMATCH: Native VLAN mismatch discovered on GigabitEthernet1/0 (1), with SW1 GigabitEthernet1/0 (10).
+*Apr 14 11:18:11.122: %CDP-4-NATIVE_VLAN_MISMATCH: Native VLAN mismatch discovered on GigabitEthernet1/1 (1), with SW1 GigabitEthernet1/1 (20).
+*Apr 14 11:18:42.190: %CDP-4-NATIVE_VLAN_MISMATCH: Native VLAN mismatch discovered on GigabitEthernet1/0 (1), with SW1 GigabitEthernet1/0 (10).
+*Apr 14 11:19:08.030: %CDP-4-NATIVE_VLAN_MISMATCH: Native VLAN mismatch discovered on GigabitEthernet1/1 (1), with SW1 GigabitEthernet1/1 (20).
+*Apr 14 11:19:41.508: %CDP-4-NATIVE_VLAN_MISMATCH: Native VLAN mismatch discovered on GigabitEthernet1/0 (1), with SW1 GigabitEthernet1/0 (10).
+*Apr 14 11:19:57.333: %CDP-4-NATIVE_VLAN_MISMATCH: Native VLAN mismatch discovered on GigabitEthernet1/1 (1), with SW1 GigabitEthernet1/1 (20).
+*Apr 14 11:20:37.036: %CDP-4-NATIVE_VLAN_MISMATCH: Native VLAN mismatch discovered on GigabitEthernet1/0 (1), with SW1 GigabitEthernet1/0 (10).
+*Apr 14 11:20:49.777: %CDP-4-NATIVE_VLAN_MISMATCH: Native VLAN mismatch discovered on GigabitEthernet1/1 (1), with SW1 GigabitEthernet1/1 (20).
+*Apr 14 11:21:30.864: %CDP-4-NATIVE_VLAN_MISMATCH: Native VLAN mismatch discovered on GigabitEthernet1/0 (1), with SW1 GigabitEthernet1/0 (10).
+*Apr 14 11:21:47.690: %CDP-4-NATIVE_VLAN_MISMATCH: Native VLAN mismatch discovered on GigabitEthernet1/1 (1), with SW1 GigabitEthernet1/1 (20).
+*Apr 14 11:22:29.605: %CDP-4-NATIVE_VLAN_MISMATCH: Native VLAN mismatch discovered on GigabitEthernet1/0 (1), with SW1 GigabitEthernet1/0 (10).
+*Apr 14 11:22:39.449: %CDP-4-NATIVE_VLAN_MISMATCH: Native VLAN mismatch discovered on GigabitEthernet1/1 (1), with SW1 GigabitEthernet1/1 (20).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SW2 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+*Apr 14 11:23:00.868: %SYS-5-CONFIG_I: Configured from console by console
+*Apr 14 11:23:19.362: %CDP-4-NATIVE_VLAN_MISMATCH: Native VLAN mismatch discovered on GigabitEthernet1/0 (1), with SW1 GigabitEthernet1/0 (10).
+*Apr 14 11:23:33.916: %CDP-4-NATIVE_VLAN_MISMATCH: Native VLAN mismatch discovered on GigabitEthernet1/1 (1), with SW1 GigabitEthernet1/1 (20).
+*Apr 14 11:24:19.509: %CDP-4-NATIVE_VLAN_MISMATCH: Native VLAN mismatch discovered on GigabitEthernet1/0 (1), with SW1 GigabitEthernet1/0 (10).
+*Apr 14 11:24:27.676: %CDP-4-NATIVE_VLAN_MISMATCH: Native VLAN mismatch discovered on GigabitEthernet1/1 (1), with SW1 GigabitEthernet1/1 (20).
+*Apr 14 11:25:08.012: %CDP-4-NATIVE_VLAN_MISMATCH: Native VLAN mismatch discovered on GigabitEthernet1/0 (1), with SW1 GigabitEthernet1/0 (10).
+*Apr 14 11:25:22.072: %CDP-4-NATIVE_VLAN_MISMATCH: Native VLAN mismatch discovered on GigabitEthernet1/1 (1), with SW1 GigabitEthernet1/1 (20).
+*Apr 14 11:25:57.063: %CDP-4-NATIVE_VLAN_MISMATCH: Native VLAN mismatch discovered on GigabitEthernet1/0 (1), with SW1 GigabitEthernet1/0 (10).
+*Apr 14 11:26:11.522: %CDP-4-NATIVE_VLAN_MISMATCH: Native VLAN mismatch discovered on GigabitEthernet1/1 (1), with SW1 GigabitEthernet1/1 (20).
+*Apr 14 11:26:53.412: %CDP-4-NATIVE_VLAN_MISMATCH: Native VLAN mismatch discovered on GigabitEthernet1/0 (1), with SW1 GigabitEthernet1/0 (10).
+*Apr 14 11:27:07.415: %CDP-4-NATIVE_VLAN_MISMATCH: Native VLAN mismatch discovered on GigabitEthernet1/1 (1), with SW1 GigabitEthernet1/1 (20).
+*Apr 14 11:27:52.190: %CDP-4-NATIVE_VLAN_MISMATCH: Native VLAN mismatch discovered on GigabitEthernet1/0 (1), with SW1 GigabitEthernet1/0 (10).
+*Apr 14 11:28:03.147: %CDP-4-NATIVE_VLAN_MISMATCH: Native VLAN mismatch discovered on GigabitEthernet1/1 (1), with SW1 GigabitEthernet1/1 (20).
+*Apr 14 11:28:48.468: %CDP-4-NATIVE_VLAN_MISMATCH: Native VLAN mismatch discovered on GigabitEthernet1/0 (1), with SW1 GigabitEthernet1/0 (10).
+*Apr 14 11:28:59.959: %CDP-4-NATIVE_VLAN_MISMATCH: Native VLAN mismatch discovered on GigabitEthernet1/1 (1), with SW1 GigabitEthernet1/1 (20).
+*Apr 14 11:29:46.548: %CDP-4-NATIVE_VLAN_MISMATCH: Native VLAN mismatch discovered on GigabitEthernet1/0 (1), with SW1 GigabitEthernet1/0 (10).
+*Apr 14 11:29:58.601: %CDP-4-NATIVE_VLAN_MISMATCH: Native VLAN mismatch discovered on GigabitEthernet1/1 (1), with SW1 GigabitEthernet1/1 (20).
+*Apr 14 11:30:37.157: %CDP-4-NATIVE_VLAN_MISMATCH: Native VLAN mismatch discovered on GigabitEthernet1/0 (1), with SW1 GigabitEthernet1/0 (10).
+*Apr 14 11:30:47.750: %CDP-4-NATIVE_VLAN_MISMATCH: Native VLAN mismatch discovered on GigabitEthernet1/1 (1), with SW1 GigabitEthernet1/1 (20).
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+SW2>
+*Apr 14 11:31:33.001: %CDP-4-NATIVE_VLAN_MISMATCH: Native VLAN mismatch discovered on GigabitEthernet1/0 (1), with SW1 GigabitEthernet1/0 (10).
+*Apr 14 11:31:38.443: %CDP-4-NATIVE_VLAN_MISMATCH: Native VLAN mismatch discovered on GigabitEthernet1/1 (1), with SW1 GigabitEthernet1/1 (20).
+*Apr 14 11:32:23.523: %CDP-4-NATIVE_VLAN_MISMATCH: Native VLAN mismatch discovered on GigabitEthernet1/0 (1), with SW1 GigabitEthernet1/0 (10).
+*Apr 14 11:32:34.004: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0, changed state to down
+*Apr 14 11:32:35.009: %LINK-3-UPDOWN: Interface GigabitEthernet1/0, changed state to down
+*Apr 14 11:32:37.001: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/1, changed state to down
+*Apr 14 11:32:38.006: %LINK-3-UPDOWN: Interface GigabitEthernet1/1, changed state to down
+*Apr 14 11:33:07.342: %SPANTREE-7-RECV_1Q_NON_TRUNK: Received 802.1Q BPDU on non trunk GigabitEthernet1/2 VLAN1.
+*Apr 14 11:33:07.342: %SPANTREE-7-BLOCK_PORT_TYPE: Blocking GigabitEthernet1/2 on VLAN0001. Inconsistent port type.
+*Apr 14 11:33:09.016: %LINK-3-UPDOWN: Interface GigabitEthernet1/2, changed state to up
+*Apr 14 11:33:10.016: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/2, changed state to up
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SW2 con0 is now available
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+
+
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+SW2>
+*Apr 14 12:03:02.997: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet2/0, changed state to down
+*Apr 14 12:03:03.998: %LINK-3-UPDOWN: Interface GigabitEthernet2/0, changed state to down
+*Apr 14 12:03:06.996: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet2/1, changed state to down
+*Apr 14 12:03:07.998: %LINK-3-UPDOWN: Interface GigabitEthernet2/1, changed state to down
+*Apr 14 12:03:24.996: %LINK-3-UPDOWN: Interface GigabitEthernet2/2, changed state to up
+*Apr 14 12:03:25.998: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet2/2, changed state to up
+SW2>en
+SW2#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+SW2(config)#int g2/2
+SW2(config-if)#switchpor
+SW2(config-if)#switchport trn
+SW2(config-if)#switchport trunk
+SW2(config-if)#switchport trunk enca
+SW2(config-if)#switchport trunk encapsulation ?
+  dot1q      Interface uses only 802.1q trunking encapsulation when trunking
+  isl        Interface uses only ISL trunking encapsulation when trunking
+  negotiate  Device will negotiate trunking encapsulation with peer on
+             interface
+
+SW2(config-if)#switchport trunk encapsulation dot1q
+SW2(config-if)#switchport
+SW2(config-if)#switchport mo
+SW2(config-if)#switchport mode trunk?
+trunk
+
+SW2(config-if)#switchport mode trunk
+SW2(config-if)#do show int g2/2
+GigabitEthernet2/2 is up, line protocol is up (connected)
+  Hardware is iGbE, address is 0c39.a07c.6d0a (bia 0c39.a07c.6d0a)
+  MTU 1500 bytes, BW 1000000 Kbit/sec, DLY 10 usec,
+     reliability 255/255, txload 1/255, rxload 1/255
+  Encapsulation ARPA, loopback not set
+  Keepalive set (10 sec)
+  Unknown, Unknown, link type is auto, media type is unknown media type
+  output flow-control is unsupported, input flow-control is unsupported
+  Auto-duplex, Auto-speed, link type is auto, media type is unknown
+  input flow-control is off, output flow-control is unsupported
+  ARP type: ARPA, ARP Timeout 04:00:00
+  Last input 00:00:01, output 00:00:01, output hang never
+  Last clearing of "show interface" counters never
+  Input queue: 0/75/0/0 (size/max/drops/flushes); Total output drops: 0
+  Queueing strategy: fifo
+  Output queue: 0/0 (size/max)
+  5 minute input rate 2000 bits/sec, 3 packets/sec
+  5 minute output rate 2000 bits/sec, 3 packets/sec
+     148 packets input, 14018 bytes, 0 no buffer
+     Received 152 broadcasts (152 multicasts)
+     0 runts, 0 giants, 0 throttles
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored
+     0 watchdog, 152 multicast, 0 pause input
+     251 packets output, 20882 bytes, 0 underruns
+     0 output errors, 0 collisions, 2 interface resets
+     0 unknown protocol drops
+     0 babbles, 0 late collision, 0 deferred
+     2 lost carrier, 0 no carrier, 0 pause output
+     0 output buffer failures, 0 output buffers swapped out
+SW2(config-if)#int g1/2
+SW2(config-if)#switchport trunk encapsulation dot1q
+SW2(config-if)#switchport mode trunk
+SW2(config-if)#do show int g1/2
+GigabitEthernet1/2 is up, line protocol is up (connected)
+  Hardware is iGbE, address is 0c39.a07c.6d06 (bia 0c39.a07c.6d06)
+  MTU 1500 bytes, BW 1000000 Kbit/sec, DLY 10 usec,
+     reliability 255/255, txload 1/255, rxload 1/255
+  Encapsulation ARPA, loopback not set
+  Keepalive set (10 sec)
+  Unknown, Unknown, link type is auto, media type is unknown media type
+  output flow-control is unsupported, input flow-control is unsupported
+  Auto-duplex, Auto-speed, link type is auto, media type is unknown
+  input flow-control is off, output flow-control is unsupported
+  ARP type: ARPA, ARP Timeout 04:00:00
+  Last input 00:00:24, output 00:00:00, output hang never
+  Last clearing of "show interface" counters never
+  Input queue: 0/75/0/0 (size/max/drops/flushes); Total output drops: 0
+  Queueing strategy: fifo
+  Output queue: 0/0 (size/max)
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 1000 bits/sec, 3 packets/sec
+     614 packets input, 59685 bytes, 0 no buffer
+     Received 615 broadcasts (615 multicasts)
+     0 runts, 0 giants, 0 throttles
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored
+     0 watchdog, 615 multicast, 0 pause input
+     7915 packets output, 548334 bytes, 0 underruns
+     0 output errors, 0 collisions, 2 interface resets
+     0 unknown protocol drops
+     0 babbles, 0 late collision, 0 deferred
+     2 lost carrier, 0 no carrier, 0 pause output
+     0 output buffer failures, 0 output buffers swapped out
+SW2(config-if)#no shut
+SW2(config-if)#do show int g1/2
+GigabitEthernet1/2 is up, line protocol is up (connected)
+  Hardware is iGbE, address is 0c39.a07c.6d06 (bia 0c39.a07c.6d06)
+  MTU 1500 bytes, BW 1000000 Kbit/sec, DLY 10 usec,
+     reliability 255/255, txload 1/255, rxload 1/255
+  Encapsulation ARPA, loopback not set
+  Keepalive set (10 sec)
+  Unknown, Unknown, link type is auto, media type is unknown media type
+  output flow-control is unsupported, input flow-control is unsupported
+  Auto-duplex, Auto-speed, link type is auto, media type is unknown
+  input flow-control is off, output flow-control is unsupported
+  ARP type: ARPA, ARP Timeout 04:00:00
+  Last input 00:00:03, output 00:00:01, output hang never
+  Last clearing of "show interface" counters never
+  Input queue: 0/75/0/0 (size/max/drops/flushes); Total output drops: 0
+  Queueing strategy: fifo
+  Output queue: 0/0 (size/max)
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 2000 bits/sec, 3 packets/sec
+     621 packets input, 60543 bytes, 0 no buffer
+     Received 622 broadcasts (622 multicasts)
+     0 runts, 0 giants, 0 throttles
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored
+     0 watchdog, 622 multicast, 0 pause input
+     8150 packets output, 564714 bytes, 0 underruns
+     0 output errors, 0 collisions, 2 interface resets
+     0 unknown protocol drops
+     0 babbles, 0 late collision, 0 deferred
+     2 lost carrier, 0 no carrier, 0 pause output
+     0 output buffer failures, 0 output buffers swapped out
+SW2(config-if)#int g1/2
+SW2(config-if)#switchport trunk encapsulation dot1q
+SW2(config-if)#switchport mode trunk
+SW2(config-if)#
+SW2#
+*Apr 14 12:12:05.371: %SYS-5-CONFIG_I: Configured from console by console
+SW2#show int g1/2 switchport
+Name: Gi1/2
+Switchport: Enabled
+Administrative Mode: trunk
+Operational Mode: trunk
+Administrative Trunking Encapsulation: dot1q
+Operational Trunking Encapsulation: dot1q
+Negotiation of Trunking: On
+Access Mode VLAN: 1 (default)
+Trunking Native Mode VLAN: 1 (default)
+Administrative Native VLAN tagging: enabled
+Voice VLAN: none
+Administrative private-vlan host-association: none
+Administrative private-vlan mapping: none
+Administrative private-vlan trunk native VLAN: none
+Administrative private-vlan trunk Native VLAN tagging: enabled
+Administrative private-vlan trunk encapsulation: dot1q
+Administrative private-vlan trunk normal VLANs: none
+Administrative private-vlan trunk associations: none
+Administrative private-vlan trunk mappings: none
+Operational private-vlan: none
+Trunking VLANs Enabled: ALL
+Pruning VLANs Enabled: 2-1001
+Capture Mode Disabled
+Capture VLANs Allowed: ALL
+
+Protected: false
+Appliance trust: none
+SW2#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+SW2(config)#do show int g2/2 switchport
+Name: Gi2/2
+Switchport: Enabled
+Administrative Mode: trunk
+Operational Mode: trunk
+Administrative Trunking Encapsulation: dot1q
+Operational Trunking Encapsulation: dot1q
+Negotiation of Trunking: On
+Access Mode VLAN: 1 (default)
+Trunking Native Mode VLAN: 1 (default)
+Administrative Native VLAN tagging: enabled
+Voice VLAN: none
+Administrative private-vlan host-association: none
+Administrative private-vlan mapping: none
+Administrative private-vlan trunk native VLAN: none
+Administrative private-vlan trunk Native VLAN tagging: enabled
+Administrative private-vlan trunk encapsulation: dot1q
+Administrative private-vlan trunk normal VLANs: none
+Administrative private-vlan trunk associations: none
+Administrative private-vlan trunk mappings: none
+Operational private-vlan: none
+Trunking VLANs Enabled: ALL
+Pruning VLANs Enabled: 2-1001
+Capture Mode Disabled
+Capture VLANs Allowed: ALL
+
+Protected: false
+Appliance trust: none
+SW2(config)#show cdp ne
+SW2(config)#show cdp nei
+SW2(config)#show cdp nei
+SW2(config)#do show cdp nei
+SW2(config)#do show cdp neighbors
+Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
+                  S - Switch, H - Host, I - IGMP, r - Repeater, P - Phone,
+                  D - Remote, C - CVTA, M - Two-port Mac Relay
+
+Device ID        Local Intrfce     Holdtme    Capability  Platform  Port ID
+SW1              Gig 1/2           170             R S I            Gig 1/2
+SW3              Gig 2/2           151             R S I            Gig 2/2
+
+Total cdp entries displayed : 2
+SW2(config)#

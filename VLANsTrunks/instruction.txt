@@ -1,0 +1,28 @@
+Goal:
+Create the following VLANs and configure the correct names:
+VLAN 10: name Engineering.
+VLAN 20: name Marketing.
+VLAN 30: name Research.
+VLAN 40: name Sales.
+VLAN 50: name Management.
+Configure fa0/1 on SW1 as an access interface in VLAN 10.
+Configure fa0/2 on SW2 as an access interface in VLAN 20.
+One of the links between SW1 and SW2 should use ISL encapsulation.
+One of the links between SW2 and SW3 is not allowed to dynamically negotiate a trunking protocol.
+One of the links between SW1 and SW3 should never send any DTP messages.
+Only VLAN 1,10 and VLAN 20 are allowed between SW1 and SW2.
+Only VLAN 1,10,20,40 and 50 are allowed between SW2 and SW3.
+The native VLAN between SW1 and SW3 should be VLAN 50 on both link
+
+
+
+VLAN 10
+name Engineering
+VLAN 20
+name Marketing
+VLAN 30
+name Research
+VLAN 40
+name Sales
+VLAN 50
+name Management
