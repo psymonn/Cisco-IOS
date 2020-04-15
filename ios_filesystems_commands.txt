@@ -1,0 +1,33 @@
+show file systems
+dir systems:
+
+
+pwd
+mkdir configs
+cd configs
+dir
+copy flash:/test.cfg flash:/configs/
+pwd
+cd ..
+pwd
+more:falsh:test.cfg
+
+more flash:file.cfg
+more nvrmam:?
+copy run start
+more nvram:startup-confg
+mkdir directory
+copy flash:filea.cfg flash:/directory
+dir flash:/directory
+archive tar /create flash:example.tar flash/directory
+archive tar /table flash:configs.tar
+mkdir tar2
+archive tar /xtract flash:example.tar flash:/directory2
+cd directory2
+
+
+
+
+
+
+
