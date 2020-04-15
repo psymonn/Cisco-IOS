@@ -1,0 +1,4 @@
+show ip int brief
+sh ip in br
+debug icmp
+ping 10.1.255.1 repeat 1
