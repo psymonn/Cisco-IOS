@@ -31,3 +31,43 @@ vlan 10
 !
 vlan 20
 ip address 10.10.2.1 255.255.255.0
+
+
+####################################################################################
+#Setup router1 as dhcp server and router 2 as a dhcp reciver
+####################################################################################
+R1(config)#int f1/0
+R1(config-if)#ip add
+R1(config-if)#ip address 10.1.1.2 255.255.255.0
+R1(config-if)#no shut
+
+
+R1(config)#ip dhcp pool clients
+R1(dhcp-config)#network 10.1.1.0 255.255.255.0
+R1(dhcp-config)#default-route 10.1.1.2
+R1(dhcp-config)#dns-server 10.1.1.2
+R1(dhcp-config)#lease 7
+R1(dhcp-config)#end
+
+R1#show ip dhcp pool
+Pool clients :
+ Utilization mark (high/low)    : 100 / 0
+
+R1#show ip dhcp binding
+Bindings from all pools not associated with VRF:
+IP address          Client-ID/              Lease expiration        Type
+                    Hardware address/
+                    User name
+
+
+R2#
+int f0/0
+mac-address aaa.bbb.ccc
+ip address dhcp
+no shut
+
+
+R1#debug ip dhcp server packet
+
+R2#show ip int brief
+R2#show ip route
