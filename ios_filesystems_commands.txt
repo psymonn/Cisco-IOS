@@ -10,9 +10,9 @@ copy flash:/test.cfg flash:/configs/
 pwd
 cd ..
 pwd
-more:falsh:test.cfg
-
 more flash:file.cfg
+delete file.cfg
+
 more nvrmam:?
 copy run start
 more nvram:startup-confg
