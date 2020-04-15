@@ -1,38 +1,3 @@
-ip dhcp pool dhcppool
-network 10.1.1.0 255.255.255.0
-address 10.1.1.7 client-id Et1/0 ascii
-
-ip dhcp pool dhcppool
-network 10.1.1.0 255.255.255.0
-address 10.1.1.7 client-id "Et1/0" ascii
-
-
-ip dhcp excluded-address 120.254.18.129 120.254.18.136
-!
-ip dhcp pool mgmt
- network 120.254.18.128 255.255.255.240
- default-router 120.254.18.129
- dns-server 120.254.18.40
- lease 0 0 15
-!
-
-
-ip dhcp pool pool1
-network 10.10.1.0 255.255.255.0
-default-router 10.10.1.1 
-dns-server what.ever.ip.itis
-!
-ip dhcp pool pool2
-   network 10.10.2.0 255.255.255.0
-   default-router 10.10.2.1 
-   dns-server what.ever.ip.itis2
-vlan 10
- ip address 10.10.1.1 255.255.255.0
-!
-vlan 20
-ip address 10.10.2.1 255.255.255.0
-
-
 ####################################################################################
 #Setup router1 as dhcp server and router 2 as a dhcp reciver
 ####################################################################################
@@ -71,3 +36,42 @@ R1#debug ip dhcp server packet
 
 R2#show ip int brief
 R2#show ip route
+
+--------------------------------------
+references:
+--------------------------------------
+ip dhcp pool dhcppool
+network 10.1.1.0 255.255.255.0
+address 10.1.1.7 client-id Et1/0 ascii
+
+ip dhcp pool dhcppool
+network 10.1.1.0 255.255.255.0
+address 10.1.1.7 client-id "Et1/0" ascii
+
+
+ip dhcp excluded-address 120.254.18.129 120.254.18.136
+!
+ip dhcp pool mgmt
+ network 120.254.18.128 255.255.255.240
+ default-router 120.254.18.129
+ dns-server 120.254.18.40
+ lease 0 0 15
+!
+
+
+ip dhcp pool pool1
+network 10.10.1.0 255.255.255.0
+default-router 10.10.1.1 
+dns-server what.ever.ip.itis
+!
+ip dhcp pool pool2
+   network 10.10.2.0 255.255.255.0
+   default-router 10.10.2.1 
+   dns-server what.ever.ip.itis2
+vlan 10
+ ip address 10.10.1.1 255.255.255.0
+!
+vlan 20
+ip address 10.10.2.1 255.255.255.0
+
+
