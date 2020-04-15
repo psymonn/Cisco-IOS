@@ -2,3 +2,17 @@ show ip int brief
 sh ip in br
 debug icmp
 ping 10.1.255.1 repeat 1
+show cdp nei
+do show spanning-tree
+switchport mode access
+
+spanning-tree vlan 100 priority 4096
+spanning-tree vlan 1 priority 4096
+
+Switch(config)#ip dhcp pool 1
+Switch(dhcp-config)#default-router 192.168.0.1
+Switch(dhcp-config)#no default-router 192.168.0.1
+Switch(dhcp-config)#exit
+
+show run int gi1/0/39
+show run int gi1/0/46
