@@ -16,3 +16,4 @@ Switch(dhcp-config)#exit
 
 show run int gi1/0/39
 show run int gi1/0/46
+show ver
