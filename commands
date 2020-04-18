@@ -19,3 +19,5 @@ show run int gi1/0/46
 show ver
 show ip int bri
 show ip route
+no int vlan 20
+int vlan 10
