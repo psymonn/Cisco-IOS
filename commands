@@ -21,3 +21,40 @@ show ip int bri
 show ip route
 no int vlan 20
 int vlan 10
+ip address  10.0.0.9 255.255.255.252
+no shut
+show run int vlan 10
+show run in f0/02
+int f0/2
+speed 100
+duplex fl
+show ip ospf nei
+show run int f0/1
+router ospf 10
+network 10.0.0.12 0.0.0.3 are
+no network 10.0.0.0 0.0.0.255 are 0
+show run | begin router ospf 10
+no passive-interface fastethernet0/1 
+no ip ospf hello-interval 5 (defautl is 10 if not set)
+no router ospf 20
+router
+network 10.0.0.0 0.0.0.3 area 0
+network 10.0.30.0 0.0.0.255 area 0
+show ip route
+show ip ospf nei
+conf t
+router bgp 65010
+no neighbor 203.0.113.1 remote-as 65032
+neighbor 203.0.113.1 remote-as 65042
+exit
+show ip bgp
+show ip bgp neigbors
+show ip route  (you should see a default gateway internet gateway i.e 203.0.113.1, network 0.0.0.0)
+ping 8.8.8.8 source 10.0.0.10
+show run | include username
+loggin console  (can you can see auth fail)
+show run | i username (it show as serial user instead os r2)
+user serial password cisco
+
+
+
