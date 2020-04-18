@@ -55,6 +55,6 @@ show run | include username
 loggin console  (can you can see auth fail)
 show run | i username (it show as serial user instead os r2)
 user serial password cisco
-
+wr (save configuration)
 
 
